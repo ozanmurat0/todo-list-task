@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/btnBack"
+            android:layout_width="?actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/register"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/bg_rectangle_gray_stroke_white_solid"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="12dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/mail" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorViewLine" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="16sp"
+                    app:met_hideUnderline="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/bg_rectangle_gray_stroke_white_solid"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="16dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/name_surname" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorViewLine" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/name"
+                    android:paddingLeft="16dp"
+                    android:inputType="text"
+                    android:paddingRight="16dp"
+                    android:textSize="16sp"
+                    app:met_hideUnderline="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/bg_rectangle_gray_stroke_white_solid"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="16dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/name_surname" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorViewLine" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/surname"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    app:met_hideUnderline="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/bg_rectangle_gray_stroke_white_solid"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="10dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/password" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorViewLine" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleContentDescription="@string/password"
+                    app:passwordToggleDrawable="@mipmap/shape"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorGray">
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPassword"
+                        android:paddingRight="16dp"
+                        android:textSize="16sp"
+                        app:met_hideUnderline="true" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/bg_rectangle_gray_stroke_white_solid"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="10dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/confirmpassword" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorViewLine" />
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleContentDescription="@string/password"
+                    app:passwordToggleDrawable="@mipmap/shape"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorGray">
+
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/confirm_password"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPassword"
+                        android:paddingRight="16dp"
+                        android:textSize="16sp"
+                        app:met_hideUnderline="true" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/bg_green_solid"
+                android:text="@string/create_new_account"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
